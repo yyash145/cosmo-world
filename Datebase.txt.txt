@@ -1,0 +1,143 @@
+http://localhost:8081/My_Project/index.jsp
+connect system/yash
+select * from ______ where name like = "_____";
+
+SIGNUP COMMAND
+create table customer(Name varchar(20), Mobile varchar(10), Password varchar(15), Email varchar(25));
+
+
+CART COMMAND
+create table cart(sn number(8), UserId varchar(20), dop date, Num number(8), Price number(9));
+create sequence Autoinc start with 1 increment by 1 minvalue 1 maxvalue 10000000;
+insert into cart values('CW'||Autoinc.nextval,?,sysdate,?,?)";
+
+
+NET BANKING COMMAND
+create table netb(TNo varchar (15), Name varchar(20), AccNo varchar(12), BankName varchar(20), IFSCCode varchar(12), DOP date, Total number(8));
+create sequence Transac start with 19000000001 increment by 7 minvalue 19000000001 maxvalue 19999999999;
+String x1="insert into netb values(Transac.nextval,?,?,?,?,sysdate,?)";
+create table Ordr(Name varchar(20), T_Id varchar(15),Item varchar(4), Price number(8), DOP date);
+
+
+
+CATEGORY COMMAND
+create table categories(Num number(4), Category varchar(20), SubCategory varchar(40), Item varchar(70), Description varchar(2000), Image varchar(20), MRP number(7), Discount number(3), Dis number(7), Price number(7));
+
+
+insert into categories values(1,'Baby Products','Baby Shampoos','Mama Earth Gentle Cleansing Shampoo For Babies','Mama Earth Gentle Cleansing Shampoo is infused with coconut cleansers and jojoba oil that help nourish your little one-s scalp. It provides the necessary moisture that makes your baby-s hair look healthy and replenished. With a pH of 5.6, this shampoo is ideal for newborns in all aspects of protection and safety. It has a tear-free formula that allows your baby to enjoy bath time and be covered in soft and instant foam.','bs2.jpg',399,18,72,327);
+insert into categories values(2,'Baby Products','Baby Shampoos','Johnson-s Baby No More Tears Shampoo','This shampoo is mild and gentle and makes your baby-s hair soft, shiny, and manageable. Bathing a newborn baby requires extra care, and you can completely rely on this shampoo as it is clinically tested, safe, and chemical-free. The formula in this shampoo claims to be as gentle as pure water on your baby-s eyes.','bs1.jpg',200,15,30,170);
+insert into categories values(3,'Baby Products','Baby Shampoos','Baby Dove Rich Moisture Shampoo','Dove has created this shampoo keeping a delicate scalp and fine hair in mind. This shampoo contains moisture cream that retains the moisture levels and prevents the scalp from drying. It not only provides moisture but also protects your baby-s hair. Features like the tear-free formula, pH neutral level, and hypoallergenicity make this shampoo an ideal choice for newborns.','bs3.jpg',215,20,43,172);
+
+insert into categories values(4,'Baby Products','Lotions and Oils','Johnson-s Baby Oil 100g','Johnson-s Baby India provides baby oil with vitamin e for a perfect massage for your baby that makes the skin smooth and soft.','oil1.jpg',360,20,72,288);
+insert into categories values(5,'Baby Products','Lotions and Oils','Dabur Lal Tail 500ml','Dabur Lal Tail is an Ayurvedic baby massage oil made using the time-tested Ayurvedic ingredients that have many proven benefits for the Baby. It-s massage helps in strengthening baby-s bones and muscles and is clinically proven to give 2 times faster physical growth to your baby. Also, clinical research substantiates the positive effects of Dabur lal tail massage in inducing better sleeping pattern in neonates and infants, which is very important for baby-s development.','oil1.jpg',360,38,137,223);
+insert into categories values(6,'Baby Products','Lotions and Oils','Johnson-s Baby Lotion (500ml)','Did you know? Your baby-s skin is 3 times thinner and loses moisture 2 times faster. That-s why Johnson-s Baby Lotion has been improved to slow down moisture loss. It hydrates skin, locks in moisture and creates a protective barrier to keep moisture in and dryness out. Its clinically proven mildness formula is designed to be gentle for newborn skin helping replenish its moisture. With a classic Johnson-s Baby scent, this hypoallergenic lotion is specially formulated to protect and nourish a baby-s tender skin from the drying effects of the environment.','lotion1.jpg',460,10,46,414);
+insert into categories values(7,'Baby Products','Lotions and Oils','Himalya Baby Lotion','Protect your baby from infections, and keep his or her skin soft and supple with the Himalaya baby lotion. This clinically-proven, mild and gentle lotion has olive oil, almond oil, and licorice for nourishing, softening, and protecting your baby-s skin.','lotion2.jpg',180,10,18,162);
+
+insert into categories values(8,'Baby Products','Powders and Creams','Johnson-s Baby Cream 100g','Johnson-s baby cream is designed with rich emollients that help moisturize and preserve baby skin-s natural softness.','cream1.png',130,22,28,102);
+insert into categories values(9,'Baby Products','Powders and Creams','Himalaya Baby Cream (100 ml)','Nourish your baby-s tender skin with this cream from Himalaya and let him have a healthy skin. Preserves Natural Skin Oils. Preserving the natural skin oils, this cream ensures your little one a soft and supple skin. Moisturizes and Soothes The Skin. This cream keeps your child-s skin hydrated and moisturized all day long and soothes it. Protects Against Irritating Wetness and Windburn. Himalaya Baby Cream protects your child-s sensitive skin against irritating wetness and windburn. The Antioxidant Country Mallow Fights The Effects Of Free Radicals. The antioxidant country mallow of Himalaya Baby Cream fights and prevents free radicals that are also known as damaged cells.','cream2.jpeg',128,19,25,103);
+insert into categories values(10,'Baby Products','Powders and Creams','Johnson-s Baby Powder 200g','We continue to use talc in our products because decades of science have reaffirmed its safety. Your trust in Johnson-s Baby Products and your confidence using them every day is a huge responsibility – that-s why we only use ingredients that are deemed safe to use by the latest science. The weight of the science does not support any claim that our talc products cause cancer.','powder1.jpg',150,10,15,135);
+insert into categories values(11,'Baby Products','Powders and Creams','NATURAL TALC-FREE BABY POWDER','Our Corn Starch based Natural Talc Free Baby Powder absorbs moisture keeping those chubby folds dry without the use of harmful talc while oils like Organic Chamomile, Calendula, and Jojoba soothe and moisturize baby-s skin.','powder2.png',249,10,25,224);
+
+insert into categories values(12,'Baby Products','Other Baby Products','Pampers New Diapers Pants, Medium (76 Count)','Pampers baby-dry pants style diapers are the only pants in India with new air channels providing your baby a new type of dryness overnight, breathable dryness. Magic gel that locks wetness away for up to 12 hours of dryness. Compatible Baby Weight: 7 kg - 12 kg','diaper1.jpg',999,25,250,749);
+insert into categories values(13,'Baby Products','Other Baby Products','Mamaearth Natural Toothpaste, Orange Flavour,50 gm','Cleanses teeth perfectly it gently cleanses kids teeth and fights tooth decay without any unwanted chemicals or additives. Paediatrician recommended fluoride, recommended by doctors to avoid tooth colouring and decay. Protects against decay xylitol in the toothpaste protects the teeth from tooth decay.','bt1.jpg',180,18,30,150);
+insert into categories values(14,'Baby Products','Other Baby Products','Sling Backpack Baby Carry Bag, Dark Blue','Usage: 4-way-position, baby facing front, horizontal position, back carry and baby facing parent. Age and weight: Recommended 3-30 months (unisex), weight: Recommended weight 4 to 12 kg','bb1.jpg',600,17,100,500);
+insert into categories values(15,'Baby Products','Other Baby Products','Pocket Meal Highchair','Pocket Meal is the latest generation compact highchair! You can fold it and bring it everywhere, thanks to its dimensions and weight. More convenient for the mum, truely comfortable for the baby. Foldable to be used even in vacations.','bc1.png',1500,33.33,500,1000);
+
+insert into categories values(16,'Bathing','Bath Oils, Tablets, and Salts','Dabur Amla Hair Oil','Dabur Amla Hair Oil is your ultimate solution if your hair is damaged due to pollution, hair treatment or hair products. It strengthens your hair from within, encourages fresh growth and controls premature greying. Dabur Amla Hair Oil nourishes the scalp and strengthens the hair strands, from root to tip, to give you thick, long and shiny tresses.','da1.jpg',44,9,4,40);
+insert into categories values(20,'Bathing','Bath Oils, Tablets, and Salts','Kesh King Oil 300 ml Hair Oil(300 ml)','Kesh King Ayurvedic Medicinal Oil not only helps in protecting and nourishing the hair but also prevents premature greying, dandruff, hair fall, split hair and checks loss of hair, sleeplessness and headache. It do helps in regrowth of hair.','kkho.jpeg',320,5,16,299);
+insert into categories values(17,'Bathing','Bath Oils, Tablets, and Salts','Keo Karpin Hair Oil','Keo karpin is a perfect blend of olive oil and vitamin E. Olive oil provides Deep Moisturising therapy. Protects the hair from pollution stress. Nourishes rejuvenates your scalp and hair.','keo.jpg',85,10,8.5,76.5);
+insert into categories values(19,'Bathing','Bath Oils, Tablets, and Salts','NatureWalk Mint Fresh Bath Salt(100 g)','Bath salts are water-soluble, pulverized minerals that are added to water to be used for bathing. They are said to improve cleaning, enhance the enjoyment of bathing, and serve as a vehicle for cosmetic agents. Bath salts have been developed which mimic the properties of natural mineral baths or hot springs.','bs1.jpeg',185,8,15,170);
+insert into categories values(18,'Bathing','Bath Oils, Tablets, and Salts','JILL STUART Bath Tablet(50g)','Bath tablets that allow you to enjoy frothy, milky-pink water and a deliriously relaxing fragrance.','bt1.jpg',200,10,20,180);
+
+insert into categories values(23,'Bathing','Bubble Bath','Khadi Pure Herbal Lavender and Jasmine*1(210 ml)','Khadi Herbal Aromatic Bubble Bath is originally made from herbal base. It is useful for all types of skin. It removes greeze and pollutants from the skin it gives a radiant look to the skin. Ingredients: Jasmine, Flower Basil Oil, Lavender Oil, Glycerine, Proline, Glycol etc. Applicare: Add 20 to 50 ml khadi aromatic bubble bath in the bathing bar and enjoy the bath.','bbb1.jpeg',135,14,20,115);
+insert into categories values(24,'Bathing','Bubble Bath','Khadi Organique Herbal Rose*3(630 ml)','Surround yourself with the fabulous magnificent fragrance of fresh roses all day long with this marvelous Bubble Bath. Mounds of lush rose bubbles enriched with conditioning Glycerin and revitalizing Proline and Glycol await to make you refreshed and relaxed. Infused with the charismatic blend of fascinating Rose and enlivening essential oils, bring harmony and balance of the mind, body and soul. The invigorating, all-natural Bubble Bath of Khadi Organique softens and moisturizes your skin, making it smooth and splendid. Make your skin feel petal soft and glowing with radiance. Take good care of your skin with this outstanding Bubble Bath and blossom like a rose!Filled with the goodness of natural herbs, Khadi is a fine blend of luxury for your Skin.','bbb2.jpeg',450,8,35,415);
+insert into categories values(25,'Bathing','Bubble Bath','Khadi Herbal Lavender and Jasmine*4(840 ml)','This high versatile antiseptic and anti-inflammatory product of Khadi Organique is for all age groups and for all skin types. Its soothing aroma creates a calming atmosphere to de-stress you. Loaded with natural, nutritive goodness, it is perfect for soft and glowing skin. Filled with the goodness of natural herbs, Khadi is a fine blend of luxury for your Skin. Handmade and carefully put together, we ensure no chemical traces and thus are proud of a 100% natural product. Each essential oil has specific benefits. These exotic fragrances along with the benefits of herbs and oils recommended in Ayurveda are ideal for beautiful, healthy Skin.','bbb3.jpeg',600,9,55,545);
+
+insert into categories values(26,'Bathing','Bath Soaps','Park Avenue Cool Blue Soap(3 x 125 g)','Beauty Luxury Beauty Bestsellers Make-up and Nails Skin Care Hair Care and Styling Fragrance Men-s Grooming.... Park Avenue Bathing Soap, Cool Blue, 125g Carton. ... Park Avenue Good Morning Freshness Deo Soap, 125g.','spa.jpeg',135,15,21,114);
+insert into categories values(27,'Bathing','Bath Soaps','Dove Cream Beauty Bathing Bar(3 x 75 g)','That-s because Dove is not a soap, it-s a Beauty Bar. While ordinary soaps can strip skin of essential nutrients, Dove Beauty Bar has mild cleansers to care for skin as it cleans. With our ¼ moisturising cream, Dove Beauty Bar leaves your face and body feeling soft, smooth and more radiant than ordinary soap.','sd.jpeg',450,2,9,441);
+insert into categories values(28,'Bathing','Bath Soaps','Dettol Original Soap(4 x 75 g)','Dettol-s Trusted Germ Protection formula that keeps you healthy and protected from 100 illness causing germs; Available variants: Original, Skincare, Cool, and Sensitive and more important it removes dandruff if use twice a week.','sdt.jpeg',150,20,30,120);
+
+insert into categories values(29,'Bathing','Body Milk','Nivea Nourishing Lotion Body Milk with Deep Moisture Serum, 400ml','With the goodness of almond oil, NIVEA Nourishing Body Milk, instantly alleviates dry skin, and keeps the skin moisturised for 24 hours with just 1 use! This rich nourishing milk is the original NIVEA Body Lotion first formulated as liquid crème in 1961.','nn.jpg',349,50,149,150);
+
+insert into categories values(30,'Bathing','Body Lotions','Dove Hair Fall Rescue Conditioner, 180ml','Dove Cream Oil Intensive Extra Dry Body Lotion is the ultimate in moisture from. It combines two powerful moisturizers; skin-nourishing oil and rich hydrating cream in a fast-absorbing lotion moisturizer and that leaves your skin extra soft, extra smooth and extra beautiful.','ds.jpg',190,30,57,133);
+insert into categories values(31,'Bathing','Body Lotions','Vaseline Intensive Care Cocoa Glow Body Lotion, 400 ml','Enriched with healing micro-droplets of Vaseline® Jelly, Vaseline® Healthy White, our best skin lightening lotion helps heal* skin and reveal healthier, fairer looking skin. *healing by moisturization of normal dry skin.','vl.jpg',325,40,130,195);
+
+insert into categories values(21,'Eye Makeup','Eyebrow Pencil','MAYBELLENE MICRO EYEBROW PENCIL MAKEUP','With seven shades, including an option for redheads, this super-skinny brow pencil is the perfect size for faking foolproof fuller brows.','ep1.jpg',500,20,100,400);
+insert into categories values(22,'Eye Makeup','Eyebrow Pencil','Cameleon Brown E-02 EyeBrow Pencil','Perfectly shaped eyebrows provide women with a flawless look.Its need to be a little darker to give you a perfect look. So, you can darken your eyebrows with Cameleon Black E-01 EyeBrow Pencil This eyebrow pencil comes with an intense black shade to provide you with a natural look.You can darken your eyebrows on your own. Its also very easy to sharpen.Moreover, it weighs only 2g and can be carried very easily.It will not get smudged or smeared at all till you dont want it to happen.','ep2.jpg',240,17,41,199);
+insert into categories values(32,'Eye Makeup','Eyebrow Pencil','Revlon ColorStay Brow Pencil, Blonde, 0.012 ounce','#205 Blonde #1 Longwear Brand Waterproof, longwearing formula lasts up to 24 hours. Angled tip applicator pencil precisely fills eyebrows. Blending brush softens color and grooms hairs in place','ep3.jpg',600,12,72,528);
+
+insert into categories values(33,'Eye Makeup','Eyeliner','Lakme Insta Eye Liner 9 ml(Black)','Define the outline of your eyes with some Color, with the Lakme Insta Liner. This eyeliner is endowed with a water-resistant formula that also makes it last longer. The deep intense color of this Lakme Insta Liner accentuates your eye makeup and adds a dash of dramatic beauty and glamour to them. The smooth Brush applies the liner over your eye lids in an even stroke and can be used for various looks you want to create.','el1.jpeg',120,10,12,108);
+insert into categories values(34,'Eye Makeup','Eyeliner','Maybelline New York Lasting Drama Gel Eyeliner 2.5 g(Black)','Velvety smooth and so easy to use, this blackest black gel eyeliner from Maybelline gives your eyes definition and instant drama. The revolutionary dip and apply composition, takes this eyeliner beyond pencils and clay. Smudge Proof, Water Proof, Safe for Sensitive Eyes and Ophthalmologist -Tested. The lightweight and smooth gel-based formula is composed of high intensity pigments that provide good color pay-off plus an airy feel, all in a compact oil-free formula.','el2.jpeg',500,20,100,400);
+insert into categories values(35,'Eye Makeup','Eyeliner','ADS Extreme Curl 2 in 1 Mascara with Eyeliner 12 ml(Black)','This curling mascara and Eyeliner has a special Shade moisturiser that makes your lashes smooth and leaves them nourished all day long. For healthy lashes, you can use it regularly. This ADS mascara and eyeliner comes with a small curl brush that makes for easy application. It also gives you long and curling eyelashes in no time. With a smooth formula, it will not make your lashes sticky. You can also remove it easily at the end of the day with damp cotton. Whether you are going on your first date or going out for a party, get luxurious, shining lashes with the ADS Curling Mascara and Eyeliner. It does not smudge and volumises your lashes, leaving them beautiful and healthy. Use it with ADS Mascara and Eyeliner to get those attractive and glamorous eyes and get ready for second glances.','el3.jpeg',385,19,75,310);
+insert into categories values(36,'Eye Makeup','Eyeliner','ADS Dynamic Jet Black Liquid Eyeliner Pen Waterproof 10 ml(Black)','Non Organic Eyeliner. Waterproof. Liquid. Smudge Proof. TipTip Type: Pen','el4.jpeg',120,26,32,88);
+
+insert into categories values(37,'Eye Makeup','Eye Shadow','MATT Makeup Palette 60 Eyeshadow 12 LipGloss 3 Blusher 3 FacePowder','The new makeup collection. It has 60 eye shadow. It has 12 lip gloss. It has 3 blusher. It has 3 face powder','es1.gif',799,38,300,499);
+insert into categories values(38,'Eye Makeup','Eye Shadow','Maybelline New York City Mini Palette Eye Shadows,Brunch Neutrals,6.1g','Master your own NYC moment with a collection of perfectly curated eyeshadow shades. Make a lasting impression with Maybelline-s six-shade mini eyeshadow palette','es2.jpg',750,25,190,560);
+insert into categories values(39,'Eye Makeup','Eye Shadow','ADS sfr 12 Colors Glitter Eye Shadow Pressed Powder Colours 4.2 gm','Color : Silver , Gold , Purple , Blue , Green , Red , Pink ,Black , Purple , Brown , Yellow Colorful for choice (Optional) Finish: Glitter, Shimmer, Diamond , Suitable for personal casual and party makeup, professional for wedding makeup, etc. Easy to portable and convenience to use. Benefit: Long-lasting, Easy to Wear, Natural, Waterproof , Easy to Wear .','es3.jpg',499,55,294,205);
+insert into categories values(40,'Eye Makeup','Eye Shadow','ADS 24 Pcs Shimmer/ Glitter Eye Shadow Pressed Powder Colours 160 gm','presents this one of a kind collection of amazing cosmetics collection that will blow your mind off. With a range of the best quality products from the Good Life, you can be sure that these products will give you the best makeover that you yearn for. So go ahead and choose the bets in makeup and skincare with Good Life!','es4.jpg',799,59,474,325);
+
+insert into categories values(41,'Eye Makeup','Eye Lotion','Gizga Essentials GZ-CK-104 Professional 6-in-1 Cleaning Kit.','Multipurpose cleaning kit for digital cameras, DSLR, camcorders, filters, lenses, binoculars, LCD, Laptops and other sensitive electronics, etc. Includes: Powerful dust air blower, 10 cotton swabs, plush Micro-Fiber Cloth (160mm X 160 mm), Suede microfiber cloth (180mm x 155mm), dust removal antistatic cleaning brush, 25 ml lens cleaning solution. The 6-piece cleaning contains the essential items necessary for the proper maintenance and care of your optical equipment-s, it easily cleans dirt and dust, effectively removes smudges and fingerprints from Lenses, LCD, and other Optics. Every photographer knows the importance of keeping your camera in pristine condition, our cleaning kit provides all the tools you need to maintain your precious camera equipment','elo.jpg',499,50,250,249);
+insert into categories values(42,'Eye Makeup','Eye Lotion','Beardo Under Eye Gel For Men (12g)','Lightens under eye dark circles. Reduces eye bags and puffiness. Soothes and moisturizes under eye skin. Prevents the signs of aging like fine lines and wrinkles','elo2.jpg',390,10,39,351);
+insert into categories values(43,'Eye Makeup','Eye Lotion',');
+insert into categories values(44,'Eye Makeup','Eye Lotion',');
+
+insert into categories values(30'Eye Makeup','Eye Makeup Remover',);
+
+insert into categories values(31'Eye Makeup','Mascara',);
+
+insert into categories values(32'Eye Makeup','Other Eye Makeup Items',');
+
+insert into categories values(33'Fragrance','Cologne and Toilet Waters',);
+insert into categories values(34'Fragrance','Perfumes',');
+insert into categories values(35'Fragrance','Talcum Powders',');
+insert into categories values(36'Fragrance','Sachets',');
+insert into categories values(37'Fragrance','Deodrants',');
+insert into categories values(38'Fragrance','Other Fragrance Items',');
+
+insert into categories values(39'Hair (Non-Colouring),'Hair Wig',');
+insert into categories values(40'Hair (Non-Colouring),'Hair Spray (aerosol fixatives)',);
+insert into categories values(41'Hair (Non-Colouring),'Hair Straighteners',');
+insert into categories values(42'Hair (Non-Colouring),'Permanent Waves',');
+insert into categories values(43'Hair (Non-Colouring),'Rinses (non-coloring)',');
+insert into categories values(44'Hair (Non-Colouring),'Shampoos (non-coloring)',''Head and Shoulders Smooth & Silky Shampoo(180 ml)','Richly indulgent anti-dandruff shampoo for dry, damaged or frizzy hair, Leaves hair up to 100% dandruff free; Gentle enough for everyday use, even for color or chemically treated hair and more important it removes dandruff if use twice a week.','has.jpeg',150,10,15,135););
+insert into categories values(45'Hair (Non-Colouring),'Hair Grooming Aids',');
+insert into categories values(46'Hair (Non-Colouring),'Wave Sets',');
+insert into categories values(47'Hair (Non-Colouring),'Other Hair Preparations',');
+
+insert into categories values('Hair Colouring','Hair Dyes and Colors',');
+insert into categories values('Hair Colouring','Hair Tints',');
+insert into categories values('Hair Colouring','Hair Rinses (coloring)',);
+insert into categories values('Hair Colouring','Hair Shampoos (coloring)',);
+insert into categories values('Hair Colouring','Hair Color Sprays (aerosol)',);
+insert into categories values('Hair Colouring','Hair Lighteners with Color',);
+insert into categories values('Hair Colouring','Hair Bleaches',);
+insert into categories values('Hair Colouring','Other Hair Coloring Preparations',);
+
+insert into categories values('Make-Up','Blushers (all types)',);
+insert into categories values('Make-Up','Face Powders',);
+insert into categories values('Make-Up','Foundations',);
+insert into categories values('Make-Up','Leg and Body Paints',);
+insert into categories values('Make-Up','Lipstick',);
+insert into categories values('Make-Up','Makeup Bases',);
+insert into categories values('Make-Up','Other Makeup Preparations',);
+insert into categories values('Make-Up','Rouges',);
+insert into categories values('Make-Up','Makeup Fixatives',);
+
+insert into categories values('Manicuring','Nail Polish and Enamel Removers',');
+insert into categories values('Manicuring','Basecoats and Undercoats',');
+insert into categories values('Manicuring','Cuticle Softeners',');
+insert into categories values('Manicuring','Nail Creams and Lotions',');
+insert into categories values('Manicuring','Nail Extenders',');
+insert into categories values('Manicuring','Nail Polish and Enamel',');
+insert into categories values('Manicuring','Other Manicuring Items',');
+
+insert into categories values('Oral Hygiene',);
+
+insert into categories values('Personal Cleanliness');
+
+insert into categories values('Shaving');
+
+
+
+
+
